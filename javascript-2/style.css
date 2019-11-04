@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Yeon+Sung&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.exercise {
+  margin: 0 1rem;
+  padding: 1rem;
+  box-shadow: 1px 1px 3px #aaa;
+  flex: 1 1 200px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  transition: 200ms;
+}
+
+.exercise:nth-child(1) {
+  border-top: 4px solid #d50606;
+}
+
+.exercise:nth-child(2) {
+  border-top: 4px solid #0800ff;
+}
+
+.exercise:nth-child(3) {
+  border-top: 4px solid #00ff48;
+}
+
+.exercise:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 6px #aaa;
+}
+
+.exercise h1 {
+  padding-bottom: 1rem;
+  font-family: "Yeon Sung", cursive;
+}
+
+.exercise p {
+  font-family: "Yeon Sung", cursive;
+  font-weight: lighter;
+}
+
+.warning {
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  transform: translate(-50%);
+  color: #d50606;
+  font-weight: lighter;
+  font-size: 20px;
+}
